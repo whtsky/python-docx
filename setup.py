@@ -26,13 +26,13 @@ version = re.search(
 ).group(1)
 
 
-NAME = 'python-docx'
+NAME = 'python-docx-whtsky'
 VERSION = version
 DESCRIPTION = 'Create and update Microsoft Word .docx files.'
 KEYWORDS = 'docx office openxml word'
 AUTHOR = 'Steve Canny'
 AUTHOR_EMAIL = 'python-docx@googlegroups.com'
-URL = 'https://github.com/python-openxml/python-docx'
+URL = 'https://github.com/whtsky/python-docx'
 LICENSE = text_of('LICENSE')
 PACKAGES = find_packages(exclude=['tests', 'tests.*'])
 PACKAGE_DATA = {'docx': ['templates/*.xml', 'templates/*.docx']}
@@ -49,11 +49,12 @@ CLASSIFIERS = [
     'Operating System :: OS Independent',
     'Programming Language :: Python',
     'Programming Language :: Python :: 2',
-    'Programming Language :: Python :: 2.6',
     'Programming Language :: Python :: 2.7',
     'Programming Language :: Python :: 3',
-    'Programming Language :: Python :: 3.3',
-    'Programming Language :: Python :: 3.4',
+    'Programming Language :: Python :: 3.5',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
     'Topic :: Office/Business :: Office Suites',
     'Topic :: Software Development :: Libraries'
 ]
