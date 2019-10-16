@@ -33,7 +33,6 @@ KEYWORDS = 'docx office openxml word'
 AUTHOR = 'Steve Canny'
 AUTHOR_EMAIL = 'python-docx@googlegroups.com'
 URL = 'https://github.com/whtsky/python-docx'
-LICENSE = text_of('LICENSE')
 PACKAGES = find_packages(exclude=['tests', 'tests.*'])
 PACKAGE_DATA = {'docx': ['templates/*.xml', 'templates/*.docx']}
 
@@ -59,25 +58,24 @@ CLASSIFIERS = [
     'Topic :: Software Development :: Libraries'
 ]
 
-LONG_DESCRIPTION = text_of('README.rst') + '\n\n' + text_of('HISTORY.rst')
+LONG_DESCRIPTION = text_of('README.md')
 
 
-params = {
-    'name':             NAME,
-    'version':          VERSION,
-    'description':      DESCRIPTION,
-    'keywords':         KEYWORDS,
-    'long_description': LONG_DESCRIPTION,
-    'author':           AUTHOR,
-    'author_email':     AUTHOR_EMAIL,
-    'url':              URL,
-    'license':          LICENSE,
-    'packages':         PACKAGES,
-    'package_data':     PACKAGE_DATA,
-    'install_requires': INSTALL_REQUIRES,
-    'tests_require':    TESTS_REQUIRE,
-    'test_suite':       TEST_SUITE,
-    'classifiers':      CLASSIFIERS,
-}
-
-setup(**params)
+setup(
+    name= NAME,
+    version= VERSION,
+    description=DESCRIPTION,
+    keywords=KEYWORDS,
+    long_description=LONG_DESCRIPTION,
+    long_description_content_type="text/markdown",
+    author=AUTHOR,
+    author_email=AUTHOR_EMAIL,
+    url=URL,
+    license="MIT License",
+    packages=PACKAGES,
+    package_data=PACKAGE_DATA,
+    install_requires=INSTALL_REQUIRES,
+    tests_require=TESTS_REQUIRE,
+    test_suite=TEST_SUITE,
+    classifiers=CLASSIFIERS
+)
