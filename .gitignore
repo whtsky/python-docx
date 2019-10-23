@@ -9,3 +9,4 @@ Session.vim
 /.tox/
 
 venv/
+/build/
