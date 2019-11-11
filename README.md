@@ -9,6 +9,10 @@ More information is available in the [python-docx documentation](https://python-
 
 ## Release History
 
+### 0.8.10.3 (2019-11-11)
+
+- TableCell's `add_table` method accepts `firstCol, firstRow, lastCol, lastRow, hBand, vBand)` now.
+
 ### 0.8.10.2 (2019-10-23)
 
 - Add ability to restart list numbering. ( https://github.com/python-openxml/python-docx/pull/210 )
